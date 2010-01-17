@@ -1,0 +1,18 @@
+<h1>Listing information_fragments</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @information_fragments.each do |information_fragment| %>
+  <tr>
+    <td><%= link_to 'Show', information_fragment %></td>
+    <td><%= link_to 'Edit', edit_information_fragment_path(information_fragment) %></td>
+    <td><%= link_to 'Destroy', information_fragment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New information_fragment', new_information_fragment_path %>

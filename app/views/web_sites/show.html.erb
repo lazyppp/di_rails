@@ -1,0 +1,18 @@
+<p>
+  <b>Url:</b>
+  <%=h @web_site.url %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @web_site.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @web_site.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_web_site_path(@web_site) %> |
+<%= link_to 'Back', web_sites_path %>

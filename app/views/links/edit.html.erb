@@ -1,0 +1,20 @@
+<h1>Editing link</h1>
+
+<% form_for(@link) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :from_web_page_id %><br />
+    <%= f.text_field :from_web_page_id %>
+  </p>
+  <p>
+    <%= f.label :to_web_page_id %><br />
+    <%= f.text_field :to_web_page_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @link %> |
+<%= link_to 'Back', links_path %>

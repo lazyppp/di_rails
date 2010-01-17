@@ -1,0 +1,23 @@
+<p>
+  <b>Web site:</b>
+  <%=h @appearance.web_site_id %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @appearance.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @appearance.width %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @appearance.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_appearance_path(@appearance) %> |
+<%= link_to 'Back', appearances_path %>

@@ -1,0 +1,12 @@
+<h1>Editing information_fragment</h1>
+
+<% form_for(@information_fragment) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @information_fragment %> |
+<%= link_to 'Back', information_fragments_path %>

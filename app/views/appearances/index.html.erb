@@ -1,0 +1,26 @@
+<h1>Listing appearances</h1>
+
+<table>
+  <tr>
+    <th>Web site</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Color</th>
+  </tr>
+
+<% @appearances.each do |appearance| %>
+  <tr>
+    <td><%=h appearance.web_site_id %></td>
+    <td><%=h appearance.height %></td>
+    <td><%=h appearance.width %></td>
+    <td><%=h appearance.color %></td>
+    <td><%= link_to 'Show', appearance %></td>
+    <td><%= link_to 'Edit', edit_appearance_path(appearance) %></td>
+    <td><%= link_to 'Destroy', appearance, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New appearance', new_appearance_path %>
